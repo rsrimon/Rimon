@@ -1,0 +1,631 @@
+/* ======== Default Style CSS ======== */
+
+body,h1,h2,h3,h4,h5,h6,p,span,a{
+    font-family: 'Spartan', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* ======== Header Section CSS ======== */
+
+.header{
+    background-color: #e7e6e6;
+}
+.header-logo img{
+    width: 100px;
+}
+ul.menu li a{
+    color: #5a5959;
+    padding: 10px 20px;
+    font-weight: 600;
+    position: relative;
+    transition: .5s;
+}
+ul.menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 7%;
+    bottom: -19px;
+    left: 8px;
+    background-color: #7673fd;
+    transition: .5s;
+}
+ul.menu li a:hover:after{
+    width: 90%;
+}
+.home{
+    color: #2829ca !important;  
+}
+.home::after {
+    content: "";
+    position: absolute;
+    width: 90% !important;
+    height: 7%;
+    bottom: -19px;
+    left: 8px;
+    background-color: #7673fd;
+    transition: .5s;
+}
+
+/* ======== Dropdown Menu CSS ======== */
+
+ul.menu li{
+    position: relative;
+}
+ul.menu li ul.drop-menu {
+    position: absolute;
+    width: 220px;
+    left: 0;
+    top: 370%;
+    padding-left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    z-index: 9;
+}
+ul.menu li ul.drop-menu li a{
+    color: white;
+    background-color: #2829ca;
+    padding: 20px;
+    border: 20px solid white;
+}
+ul.menu li:hover ul.drop-menu{
+    visibility: visible;
+    opacity: 1;
+}
+ul.menu li ul.drop-menu li a:hover::after{
+    width: 0;
+}
+.btn-primary{
+    color: #456eec;
+    background-color: white !important;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-primary::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #7673fd;
+    border-radius: 25px;
+    transition: .5s;
+    z-index: -1;
+}
+.btn-primary:hover::after{
+    width: 100%;
+}
+
+/* ======== Banner Section CSS ======== */
+
+.banner{
+    background-color: #edf6ff;
+    position: relative;
+    padding: 17px;
+    overflow: hidden;
+}
+.banner-content{
+    padding: 100px 0;
+}
+.banner-content h1{
+    font-weight: 600;
+}
+.btn-success{
+    background-color: #0d6efd;
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+.btn-success:hover{
+    color: #615ddb;
+    background-color: white;
+}
+.banner-image img {
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    top: -87px;
+    right: -135px;
+}
+
+/* ======== Service Section CSS ======== */
+
+.service-content{
+    width: 765px;
+}
+.serves-p{
+    color: #9a8ceb;
+}
+.service-content h1{
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 40px;
+}
+.service-content h1::after {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 4%;
+    left: 0;
+    bottom: -5px;
+    background-color: #9889eb;
+}
+.service-item .card {
+    background-color: #f9fcff;
+    box-shadow: 0px 0px 7px 1px rgb(0 0 0 / 28%);
+    transition: .5s;
+}
+.service-item .card:hover{
+    background-color: #3a4bf3;
+}
+.service-item .card:hover.card span{
+    color: #3a4bf3;
+    background-color: white;
+}
+.service-item .card:hover.card span::after{
+    width: 80%;
+    background-color: white;
+}
+.service-item .card span{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-color: #5252f0;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 50px 50px 0px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.service-item .card span::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 5%;
+    left: 0;
+    bottom: -15px;
+    background-color: #9889eb;
+    transition: .4s;
+}
+.service-item1 {
+    position: relative;
+    bottom: 195px;
+    right: 45px;
+    z-index: -1;
+}
+
+/* ======== Video Section CSS ======== */
+
+.video {
+    background-image: url(./Img/video-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    margin-top: -195px;
+}
+.video::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(72, 82, 109, .7);
+    z-index: -1;
+}
+.video-text h3{
+    position: relative;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-text h3::after {
+    content: "";
+    position: absolute;
+    width: 16%;
+    height: 10%;
+    bottom: -7px;
+    left: 250px;
+    background-color: #fff;
+}
+.animation-btn {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3763eb;
+    font-size: 25px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+    left: 265px;
+}
+.animation-btn::after{
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid white;
+    animation: playbtn 2s ease-in-out infinite;
+}
+.animation-btn::before{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1px solid white;
+    animation: playbtn 2s ease-in-out infinite;
+}
+@keyframes playbtn{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    25%{
+        transform: scale(1);
+        opacity: .5;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: .7;
+    }
+    75%{
+        transform: scale(1.7);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* ======== Pricing Table Section CSS ======== */
+
+.pricing-table{
+    background-color: #f6f9fc;
+}
+.pricing-table-content h2{
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 40px;
+}
+.pricing-table-content h2::after {
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: 8%;
+    left: 47%;
+    bottom: -20px;
+    background-color: #0d6efd;
+}
+ul.pt{
+    margin-top: 100px;
+    position: relative;
+} 
+ul.pt::before {
+    content: "";
+    position: absolute;
+    width: 55%;
+    height: 1px;
+    background-color: #ddd;
+    top: -40px;
+    left: 95px;
+}
+.pricing-table-item ul.pt li{
+    font-size: 20px;
+    color: rgb(148, 143, 143);
+    margin-bottom: 20px;
+}
+.btn-danger{
+    color: #fff;
+    background-color: #0d6efd !important;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-danger::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0d6efd;
+    border-radius: 25px;
+    transition: .5s;
+    z-index: -1;
+}
+.btn-danger:hover{
+    color: #fff !important;
+}
+.btn-danger:hover::after{
+    width: 100%;
+}
+.pricing-table-item{
+    transition: .9s;
+}
+.pricing-table-item:hover{
+    color: #fff;
+    background-color: #0d6efd !important;
+}
+.pricing-table-item:hover ul.pt li{
+    color: #fff;
+}
+.pricing-table-item:hover a.btn-danger{
+    color: #0d6efd;
+    background-color: #fff !important;
+}
+
+/* ======== Purchase Section CSS ======== */
+
+.purchase{
+    background-image: url(./Img/free-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+.purchase::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(13, 109, 253, 0.8);
+    z-index: -1;
+}
+.purchase-content h2{
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+.purchase-content h2::after {
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: 2%;
+    bottom: -20px;
+    left: 45%;
+    background-color: #fff;
+}
+.btn-dark{
+    color: #0d6efd;
+    background-color: white !important;
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-dark::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0d6efd;
+    border: 1px solid white;
+    border-radius: 25px;
+    transition: .5s;
+    z-index: -1;
+}
+.btn-dark:hover::after{
+    width: 100%;
+}
+
+/* ======== Subscribe Section CSS ======== */
+
+.subscribe{
+    background-color: #f8f9fa;
+}
+.subscribe-left form input{
+    padding: 7px 10px;
+    padding-right: 50px;
+    outline: none;
+    margin-right: 20px;
+}
+.subscribe-left form a{
+    color: white;
+    font-weight: 600;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 7px 15px;
+}
+.subscribe-right a{
+    display: inline-block;
+    color: white;
+    background-color: #0d6efd;
+    font-weight: 500;
+    padding: 7px 15px;
+    margin-top: 60px;
+    transition: .2s;
+}
+.subscribe-right a:hover{
+    background-color: #0b60e0;
+}
+
+/* ======== Company Section CSS ======== */
+
+.company h1{
+    font-weight: 700;
+    position: relative;
+    margin-top: 20px;
+}
+.company h1::after {
+    content: "";
+    position: absolute;
+    width: 14%;
+    height: 2%;
+    bottom: -25px;
+    left: 3px;
+    background-color: #3763eb;
+}
+.company-icon img {
+    width: 260px;
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-left: -5px;
+    height: 170px;
+    margin-top: -1px;
+    transition: .5s;
+}
+.company-icon img:hover{
+    background-color: #f6f9fc;
+}
+
+/* ======== Blog Section CSS ======== */
+
+.blog-content h1{
+    font-weight: 700;
+    position: relative;
+    margin-top: 20px;
+}
+.blog-content h1::after {
+    content: "";
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    bottom: -25px;
+    left: 47%;
+    background-color: #3763eb;
+}
+.blog-item-img{
+    position: relative;
+}
+.blog-item-img h6 {
+    position: absolute !important;
+    bottom: 10px;
+    right: 21px;
+    display: inline-block;
+    background-color: #3763eb;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    padding-left: 60px;
+    position: relative;
+}
+.blog-item-img h6::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: url(./Img/author.jpg) center;
+    background-size: cover;
+}
+
+/* ======== Footer Section CSS ======== */
+
+.footer{
+    background-color: #081828;
+}
+.footer-widget {
+    margin-left: 50px;
+}
+.fw{
+    margin-left: 0;
+}
+.footer-widget a img{
+    width: 150px;
+}
+.socal-icon ul.si{
+    padding-left: 0;
+} 
+.socal-icon ul.si li a {
+    color: #fff;
+    font-size: 25px;
+    margin: 15px;
+}
+.socal-icon ul.si li a:hover {
+    letter-spacing: 0;
+}
+.footer-widget h3{
+    color: white;
+    position: relative;
+}
+.footer-widget h3::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: -15px;
+    background-color: #3a68f9;
+}
+.footer-widget ul{
+    padding-left: 0;
+}
+.footer-widget ul li a{
+    display: inline-block;
+    color: #898e9c;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: .5s;
+}
+.footer-widget ul li a:hover{
+    color: #0d6efd;
+    letter-spacing: 1.5px;
+}
+.footer-bottom-content{
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+}
+.footer-bottom-content::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #898e9c;
+}
+
+.footer-bottom-content h6{
+    color: white;
+}
+.footer-bottom-content h6 a{
+    color: white;
+    transition: .5s;
+}
+.footer-bottom-content h6 a:hover{
+    color: #0d6efd;
+}
